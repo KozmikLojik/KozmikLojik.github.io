@@ -1,25 +1,17 @@
 <!doctype html>
-<html lang="en" id="top">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
+  <title>Projects | Prit Bhatt</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Projects | Prit Bhatt</title>
-  <meta name="description"
-        content="Software projects by Prit Bhatt — computer vision, machine learning, and full-stack applications." />
-
-  <!-- Font + AOS -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
-  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="sticky-header" data-aos="fade-down">
+<header class="sticky-header">
   <div class="profile-card">
     <div class="intro">
       <h1>Prit Bhatt</h1>
@@ -28,7 +20,7 @@
   </div>
 
   <nav class="site-nav">
-    <a href="portfolio.html" class="nav-button">Home</a>
+    <a href="index.html" class="nav-button">Home</a>
     <a href="projects.html" class="nav-button">Projects</a>
     <a href="achievements.html" class="nav-button">Achievements</a>
     <a href="https://github.com/KozmikLojik" target="_blank" class="nav-button">GitHub</a>
@@ -36,186 +28,46 @@
   </nav>
 </header>
 
-<!-- ================= MAIN ================= -->
-<main>
+<main class="projects">
+  <h2>All Projects</h2>
 
-  <!-- Projects -->
-  <section class="projects" data-aos="fade-up">
-    <h2>All Projects</h2>
+  <div class="projects-grid">
 
-    <!-- Search -->
-    <div style="max-width:420px;margin:0 auto 24px;">
-      <input
-        id="projectSearch"
-        type="text"
-        placeholder="Search projects by name, tech, or domain…"
-        style="width:100%;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit;"
-        aria-label="Search projects"
-      />
-    </div>
+    <article class="project-card">
+      <h3>Mediscan AI</h3>
+      <p>
+        Medical image analysis system for anomaly detection and segmentation
+        using deep learning pipelines.
+      </p>
+      <p class="tech"><strong>Tech:</strong> Python, PyTorch, TensorFlow, OpenCV</p>
+      <a href="https://github.com/KozmikLojik/mediscan-ai" target="_blank">GitHub</a>
+    </article>
 
-    <div id="projectsGrid" class="projects-grid">
+    <article class="project-card">
+      <h3>Aqua Vision AI</h3>
+      <p>
+        Computer vision system for detecting water bodies and pollution
+        patterns in satellite imagery.
+      </p>
+      <p class="tech"><strong>Tech:</strong> Python, OpenCV, Geospatial Data</p>
+      <a href="https://github.com/KozmikLojik/aqua-vision-ai" target="_blank">GitHub</a>
+    </article>
 
-      <!-- Internet Scraper -->
-      <article class="project-card" data-tags="python requests beautifulsoup scraper">
-        <h3>Internet Scraper</h3>
-        <p>
-          Built a Python-based web scraper to extract structured links and metadata
-          from websites.
-        </p>
-        <p>
-          Implemented efficient request handling and HTML parsing using Requests
-          and BeautifulSoup for repeatable data collection workflows.
-        </p>
-        <p class="tech">
-          <strong>Why it matters:</strong>
-          Demonstrates automated data collection pipelines and backend scripting fundamentals.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, Requests, BeautifulSoup</p>
-        <a href="https://github.com/KozmikLojik/internet_scraper" target="_blank">View on GitHub</a>
-      </article>
+    <article class="project-card">
+      <h3>AI Resume Screener</h3>
+      <p>
+        NLP-based system to extract skills and rank resumes using ML pipelines.
+      </p>
+      <p class="tech"><strong>Tech:</strong> Python, spaCy, scikit-learn</p>
+      <a href="https://github.com/KozmikLojik/ai-resume-screener" target="_blank">GitHub</a>
+    </article>
 
-      <!-- Mediscan AI -->
-      <article class="project-card" data-tags="medical ai pytorch tensorflow opencv">
-        <h3>Mediscan AI</h3>
-        <p>
-          Built a medical image analysis system for anomaly detection and segmentation.
-        </p>
-        <p>
-          Designed deep learning pipelines to preprocess images, apply trained models,
-          and generate segmentation outputs.
-        </p>
-        <p class="tech">
-          <strong>Why it matters:</strong>
-          Shows applied deep learning, computer vision workflows, and ML pipeline design.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, PyTorch, TensorFlow, OpenCV</p>
-        <a href="https://github.com/KozmikLojik/mediscan-ai" target="_blank">View on GitHub</a>
-      </article>
-
-      <!-- Aqua Vision AI -->
-      <article class="project-card" data-tags="satellite vision geospatial opencv">
-        <h3>Aqua Vision AI</h3>
-        <p>
-          Built a computer vision system to detect water bodies and pollution
-          signatures in satellite imagery.
-        </p>
-        <p>
-          Applied image preprocessing and feature extraction techniques to analyze
-          large-scale geospatial image data.
-        </p>
-        <p class="tech">
-          <strong>Why it matters:</strong>
-          Demonstrates remote sensing analysis and practical computer vision applications.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, OpenCV, Geospatial Data</p>
-        <a href="https://github.com/KozmikLojik/aqua-vision-ai" target="_blank">View on GitHub</a>
-      </article>
-
-      <!-- AI Resume Screener -->
-      <article class="project-card" data-tags="nlp resume screening spacy">
-        <h3>AI Resume Screener</h3>
-        <p>
-          Built an NLP-based system to extract skills from resumes and rank candidates.
-        </p>
-        <p>
-          Implemented text preprocessing and feature extraction pipelines using spaCy
-          and machine learning models.
-        </p>
-        <p class="tech">
-          <strong>Why it matters:</strong>
-          Shows applied NLP, text pipelines, and ML-driven decision systems.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, spaCy, scikit-learn</p>
-        <a href="https://github.com/KozmikLojik/ai-resume-screener" target="_blank">View on GitHub</a>
-      </article>
-
-      <!-- Fake News Detector -->
-      <article class="project-card" data-tags="nlp transformers huggingface">
-        <h3>Fake News Detector</h3>
-        <p>
-          Built a system to classify news articles as real or fake using transformer-based models.
-        </p>
-        <p>
-          Integrated pretrained language models and inference pipelines with basic
-          explainability features.
-        </p>
-        <p class="tech">
-          <strong>Why it matters:</strong>
-          Demonstrates modern NLP workflows and transformer model integration.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, Transformers, Hugging Face</p>
-        <a href="https://github.com/KozmikLojik/fake-news-detector-llm" target="_blank">View on GitHub</a>
-      </article>
-
-      <!-- Signal Clone -->
-      <article class="project-card" data-tags="messaging realtime node websocket">
-        <h3>Signal Clone</h3>
-        <p>
-          Built a privacy-focused messaging architecture prototype with real-time communication.
-        </p>
-        <p>
-          Implemented WebSocket-based message handling and backend logic for live data exchange.
-        </p>
-        <p class="tech">
-          <strong>Why it matters:</strong>
-          Shows understanding of real-time systems and backend communication patterns.
-        </p>
-        <p class="tech"><strong>Tech:</strong> JavaScript, Node.js, WebSocket</p>
-        <a href="https://github.com/KozmikLojik/Signal--Clone" target="_blank">View on GitHub</a>
-      </article>
-
-      <!-- Robinhood UI Clone -->
-      <article class="project-card" data-tags="react finance charts">
-        <h3>Robinhood UI Clone</h3>
-        <p>
-          Built a stock trading user interface with interactive charts and portfolio views.
-        </p>
-        <p>
-          Implemented frontend components and state-driven UI updates using React.
-        </p>
-        <p class="tech">
-          <strong>Why it matters:</strong>
-          Demonstrates frontend architecture, component design, and data visualization.
-        </p>
-        <p class="tech"><strong>Tech:</strong> JavaScript, React</p>
-        <a href="https://github.com/KozmikLojik/Robinhood-Clone" target="_blank">View on GitHub</a>
-      </article>
-
-    </div>
-  </section>
-
+  </div>
 </main>
 
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer" data-aos="fade-up">
-  <p>Contact: <a href="mailto:pritbhatt2010@gmail.com">pritbhatt2010@gmail.com</a></p>
-
-  <div style="margin-top:10px;">
-    <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
-  </div>
-
-  <p style="margin-top:12px;">
-    © 2025 Prit Kalpesh Kumar Bhatt. All rights reserved.
-  </p>
+<footer class="site-footer">
+  <p>© 2025 Prit Bhatt</p>
 </footer>
-
-<!-- ================= SCRIPTS ================= -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ once:true, duration:500 });
-
-  const input = document.getElementById('projectSearch');
-  if (input) {
-    input.addEventListener('input', e => {
-      const q = e.target.value.toLowerCase().trim();
-      document.querySelectorAll('.project-card').forEach(card => {
-        card.style.display = card.textContent.toLowerCase().includes(q) ? '' : 'none';
-      });
-    });
-  }
-</script>
 
 </body>
 </html>

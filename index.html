@@ -10,49 +10,25 @@
 
   <title>Prit Bhatt | Portfolio</title>
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- AOS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Prit Kalpesh Kumar Bhatt",
-    "url": "https://github.com/KozmikLojik",
-    "sameAs": [
-      "https://github.com/KozmikLojik",
-      "https://www.linkedin.com/in/prit-bhatt-25a892348"
-    ],
-    "jobTitle": "Computer Science Student",
-    "description": "Student developer focused on artificial intelligence, computer vision, and full-stack systems."
-  }
-  </script>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
 <header class="site-header" data-aos="fade-down">
   <div class="header-inner">
-
-    <!-- Brand -->
     <div class="brand">
-      <a href="#top" class="brand-name">Prit Bhatt</a>
-      <span class="brand-subtitle">Computer Science · AI</span>
+      <a href="index.html" class="brand-name">Prit Bhatt</a>
+      <span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span>
     </div>
 
-    <!-- Navigation -->
     <nav class="main-nav" aria-label="Primary Navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="projects.html">Projects</a>
+      <a href="achievements.html">Achievements</a>
       <a href="#contact">Contact</a>
 
       <span class="nav-divider"></span>
@@ -60,195 +36,75 @@
       <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
     </nav>
-
   </div>
 </header>
 
-<!-- ================= MAIN ================= -->
 <main>
 
-  <!-- Intro -->
-  <section id="intro" class="intro" data-aos="fade-up">
-    <h1 class="intro-heading">
-      <span class="typewrite"
-            data-period="2000"
-            data-type='[
-              "Computer Science and AI student",
-              "Building computer vision and full-stack systems",
-              "Focused on practical, real-world software projects"
-            ]'>
-      </span>
-    </h1>
-  </section>
+<section class="intro" data-aos="fade-up">
+  <h1>
+    Computer Science student building <br>
+    <strong>AI, computer vision, and production-grade software systems</strong>
+  </h1>
+</section>
 
-  <!-- About -->
- <section id="about" class="about-me">
+<section id="about" class="about-me">
   <h2>About Me</h2>
-
   <p>
-    I am a student developer focused on building applied AI and computer vision
-    systems, with particular interest in real-time processing and practical ML
-    pipelines.
+    I focus on applied artificial intelligence and computer vision, with an
+    emphasis on real-time processing and integrating ML models into practical,
+    end-to-end systems.
   </p>
-
   <p>
-    My work spans computer vision, backend systems, and full-stack development,
-    with an emphasis on understanding how models integrate into real
-    applications rather than remaining isolated experiments.
+    My work spans backend systems, automation, and full-stack development,
+    prioritizing robustness and real-world applicability over toy demos.
   </p>
 </section>
-  
 
-  <!-- Skills -->
-  <section id="skills" class="skills-section" data-aos="fade-up">
-    <h2>Technical Skills</h2>
+<section id="skills" class="skills-section">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><strong>Languages:</strong> Python, JavaScript, TypeScript, Java</li>
+    <li><strong>Frameworks:</strong> OpenCV, MediaPipe, Node.js, Express</li>
+    <li><strong>Tools:</strong> Git, GitHub, MongoDB, REST APIs</li>
+    <li><strong>Domains:</strong> Computer Vision, Automation, ML Foundations</li>
+  </ul>
+</section>
 
-    <ul class="skill-groups">
-      <li>
-        <strong>Programming Languages:</strong>
-        Python, JavaScript, TypeScript, Java, HTML, CSS
-      </li>
-      <li>
-        <strong>Frameworks & Libraries:</strong>
-        Node.js, Express, OpenCV, MediaPipe, scikit-learn
-      </li>
-      <li>
-        <strong>Tools & Platforms:</strong>
-        Git, GitHub, Linux, MongoDB, REST APIs
-      </li>
-      <li>
-        <strong>Domains:</strong>
-        Computer Vision, Automation, Web Development, Machine Learning (Foundations)
-      </li>
-    </ul>
-  </section>
+<section class="projects-section">
+  <h2>Flagship Project</h2>
 
-  <!-- Featured Projects -->
-  <section class="projects-section" data-aos="fade-up">
-    <h2>Featured Projects</h2>
-    <!-- =========================
-     FLAGSHIP PROJECT
-     ========================= -->
-<article class="project-card" style="border:2px solid var(--accent)">
-  <div class="card-body">
-    <h3>🖐️ Real-Time Hand Gesture Recognition System</h3>
-
+  <article class="project-card" style="border:2px solid var(--accent)">
+    <h3>Real-Time Hand Gesture Recognition System</h3>
     <p>
-      Built a real-time computer vision system that detects and classifies
-      human hand gestures using live webcam input.
+      Designed and implemented a real-time computer vision pipeline that detects
+      and classifies human hand gestures from live webcam input.
     </p>
-
     <p>
-      Designed a complete processing pipeline including frame preprocessing,
-      landmark detection, gesture classification, and low-latency inference.
+      Built the full pipeline including preprocessing, landmark detection,
+      classification logic, and low-latency inference.
     </p>
-
-    <p class="tech">
-      <strong>Why it matters:</strong>
-      Demonstrates applied computer vision, real-time processing constraints,
-      and production-style ML pipeline thinking.
-    </p>
-
-    <p class="tech">
-      <strong>Tech:</strong> Python · OpenCV · MediaPipe · NumPy
-    </p>
-  </div>
-
-  <div class="project-links">
+    <p class="tech"><strong>Tech:</strong> Python · OpenCV · MediaPipe · NumPy</p>
     <a href="https://github.com/KozmikLojik/hand_gesture_recognition" target="_blank">
       View on GitHub
     </a>
+  </article>
+
+  <div class="center-link">
+    <a href="projects.html" class="nav-button">View all projects</a>
   </div>
-</article>
-
-
-    <div class="projects-grid">
-
-      <article class="project-card">
-        <h3>Hand Gesture Recognition System</h3>
-        <p>
-          Real-time hand gesture recognition system built using MediaPipe and
-          OpenCV, processing live webcam input with low latency.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, OpenCV, MediaPipe</p>
-        <a href="https://github.com/KozmikLojik/hand_gesture_recognition"
-           target="_blank">View on GitHub</a>
-      </article>
-
-      <article class="project-card">
-        <h3>Web Data Scraper</h3>
-        <p>
-          Python-based tool for extracting links and metadata from web pages
-          using structured parsing and efficient requests.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, Requests, BeautifulSoup</p>
-        <a href="https://github.com/KozmikLojik/internet_scraper"
-           target="_blank">View on GitHub</a>
-      </article>
-
-      <article class="project-card">
-        <h3>Browser Automation Toolkit</h3>
-        <p>
-          Automation scripts for browser interaction, form submission, and
-          simulated user workflows using Selenium.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, Selenium</p>
-        <a href="https://github.com/KozmikLojik/browser_automation"
-           target="_blank">View on GitHub</a>
-      </article>
-
-    </div>
-
-    <div class="center-link">
-      <a href="projects.html" class="nav-button">View all projects</a>
-    </div>
-  </section>
+</section>
 
 </main>
 
-<!-- ================= FOOTER ================= -->
-<footer id="contact" class="site-footer" data-aos="fade-up">
+<footer id="contact" class="site-footer">
   <h2>Contact</h2>
-
-  <p>Email:</p>
-  <a href="mailto:pritbhatt2010@gmail.com" class="email-link">
-    pritbhatt2010@gmail.com
-  </a>
-
-  <div class="footer-socials">
-    <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
-  </div>
-
-  <p class="copyright">
-    © 2025 Prit Kalpesh Kumar Bhatt. All rights reserved.
-  </p>
+  <a href="mailto:pritbhatt2010@gmail.com">pritbhatt2010@gmail.com</a>
+  <p>© 2025 Prit Kalpesh Kumar Bhatt</p>
 </footer>
 
-<!-- ================= SCRIPTS ================= -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ once: true, duration: 500 });
-</script>
-
-<script src="script.js"></script>
+<script>AOS.init({ once:true, duration:500 });</script>
 
 </body>
-<header class="sticky-header">
-  <div class="profile-card">
-    <div class="intro">
-      <h1>Prit Bhatt</h1>
-      <p class="tagline">Applied AI • Computer Vision • Full-Stack Systems</p>
-    </div>
-  </div>
-
-  <nav class="site-nav">
-    <a href="portfolio.html" class="nav-button">Home</a>
-    <a href="projects.html" class="nav-button">Projects</a>
-    <a href="achievements.html" class="nav-button">Achievements</a>
-    <a href="https://github.com/KozmikLojik" target="_blank" class="nav-button">GitHub</a>
-    <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" class="nav-button">LinkedIn</a>
-  </nav>
-</header>
-
 </html>
