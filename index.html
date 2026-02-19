@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="top">
+<html lang="en" id="top" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,101 +10,145 @@
 
   <title>Prit Bhatt | Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts - Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Tailwind + daisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Your custom styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="bg-[#0b0c10] text-[#d7d9db] font-['Outfit'] min-h-screen">
 
-<header class="site-header" data-aos="fade-down">
-  <div class="header-inner">
-    <div class="brand">
-      <a href="index.html" class="brand-name">Prit Bhatt</a>
-      <span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header sticky top-3 z-50 mx-4 md:mx-6 lg:mx-8" data-aos="fade-down">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="#" class="brand-name">Prit Bhatt</a>
+        <span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="#contact">Contact</a>
+
+        <span class="nav-divider"></span>
+
+        <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
+      </nav>
     </div>
+  </header>
 
-    <nav class="main-nav" aria-label="Primary Navigation">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="achievements.html">Achievements</a>
-      <a href="#contact">Contact</a>
+  <!-- ================= MAIN ================= -->
+  <main class="pt-24 pb-16">
 
-      <span class="nav-divider"></span>
+    <!-- Intro -->
+    <section class="intro text-center px-6 md:px-12 lg:px-20" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+        Computer Science student building<br>
+        <span class="text-[#66fcf1]">AI, computer vision, and production-grade software systems</span>
+      </h1>
+      <p class="text-xl md:text-2xl opacity-80 max-w-4xl mx-auto">
+        Focused on real-time processing, robust ML integration, and end-to-end systems.
+      </p>
+    </section>
 
-      <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
-    </nav>
-  </div>
-</header>
+    <!-- About -->
+    <section id="about" class="about-section mt-20 px-6 md:px-12 lg:px-20" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#66fcf1] mb-8 text-center">About Me</h2>
+      <div class="max-w-5xl mx-auto text-lg leading-relaxed space-y-6">
+        <p>
+          I focus on applied artificial intelligence and computer vision, with an emphasis on real-time processing and integrating ML models into practical, end-to-end systems.
+        </p>
+        <p>
+          My work spans backend systems, automation, and full-stack development, prioritizing robustness and real-world applicability over toy demos.
+        </p>
+      </div>
+    </section>
 
-<main>
+    <!-- Skills -->
+    <section id="skills" class="skills-section mt-20 px-6 md:px-12 lg:px-20" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#66fcf1] mb-10 text-center">Technical Skills</h2>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 text-lg">
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-[#66fcf1]">Languages</h3>
+          <p>Python, JavaScript, TypeScript, Java</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-[#66fcf1]">Frameworks & Libraries</h3>
+          <p>OpenCV, MediaPipe, Node.js, Express</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-[#66fcf1]">Tools</h3>
+          <p>Git, GitHub, MongoDB, REST APIs</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-[#66fcf1]">Domains</h3>
+          <p>Computer Vision, Automation, ML Foundations</p>
+        </div>
+      </div>
+    </section>
 
-<section class="intro" data-aos="fade-up">
-  <h1>
-    Computer Science student building <br>
-    <strong>AI, computer vision, and production-grade software systems</strong>
-  </h1>
-</section>
+    <!-- Flagship Project -->
+    <section class="projects-section mt-20 px-6 md:px-12 lg:px-20" data-aos="fade-up" data-aos-delay="200">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#66fcf1] mb-10 text-center">Flagship Project</h2>
+      
+      <div class="project-card max-w-4xl mx-auto">
+        <h3 class="text-2xl font-bold text-[#66fcf1] mb-4">Real-Time Hand Gesture Recognition System</h3>
+        <p class="mb-4">
+          Designed and implemented a real-time computer vision pipeline that detects and classifies human hand gestures from live webcam input.
+        </p>
+        <p class="mb-6">
+          Built the full pipeline including preprocessing, landmark detection, classification logic, and low-latency inference.
+        </p>
+        <div class="tech">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>MediaPipe</span>
+          <span>NumPy</span>
+        </div>
+        <a href="https://github.com/KozmikLojik/hand_gesture_recognition" target="_blank" class="mt-6 inline-block bg-[#66fcf1]/10 hover:bg-[#66fcf1]/20 text-[#66fcf1] px-6 py-3 rounded-lg font-medium transition-all">
+          View on GitHub →
+        </a>
+      </div>
 
-<section id="about" class="about-me">
-  <h2>About Me</h2>
-  <p>
-    I focus on applied artificial intelligence and computer vision, with an
-    emphasis on real-time processing and integrating ML models into practical,
-    end-to-end systems.
-  </p>
-  <p>
-    My work spans backend systems, automation, and full-stack development,
-    prioritizing robustness and real-world applicability over toy demos.
-  </p>
-</section>
+      <div class="text-center mt-12">
+        <a href="projects.html" class="inline-block bg-[#45a29e]/80 hover:bg-[#45a29e] text-white px-8 py-4 rounded-lg font-medium transition-all shadow-lg">
+          View all projects
+        </a>
+      </div>
+    </section>
 
-<section id="skills" class="skills-section">
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>Languages:</strong> Python, JavaScript, TypeScript, Java</li>
-    <li><strong>Frameworks:</strong> OpenCV, MediaPipe, Node.js, Express</li>
-    <li><strong>Tools:</strong> Git, GitHub, MongoDB, REST APIs</li>
-    <li><strong>Domains:</strong> Computer Vision, Automation, ML Foundations</li>
-  </ul>
-</section>
+  </main>
 
-<section class="projects-section">
-  <h2>Flagship Project</h2>
+  <!-- ================= FOOTER ================= -->
+  <footer id="contact" class="site-footer mt-24">
+    <div class="text-center py-12">
+      <h2 class="text-2xl font-bold text-[#66fcf1] mb-4">Get in Touch</h2>
+      <a href="mailto:pritbhatt2010@gmail.com" class="text-xl hover:text-[#66fcf1] transition-colors">
+        pritbhatt2010@gmail.com
+      </a>
+      <p class="mt-8 text-sm opacity-70">
+        © 2025 Prit Kalpesh Kumar Bhatt — All Rights Reserved
+      </p>
+    </div>
+  </footer>
 
-  <article class="project-card" style="border:2px solid var(--accent)">
-    <h3>Real-Time Hand Gesture Recognition System</h3>
-    <p>
-      Designed and implemented a real-time computer vision pipeline that detects
-      and classifies human hand gestures from live webcam input.
-    </p>
-    <p>
-      Built the full pipeline including preprocessing, landmark detection,
-      classification logic, and low-latency inference.
-    </p>
-    <p class="tech"><strong>Tech:</strong> Python · OpenCV · MediaPipe · NumPy</p>
-    <a href="https://github.com/KozmikLojik/hand_gesture_recognition" target="_blank">
-      View on GitHub
-    </a>
-  </article>
-
-  <div class="center-link">
-    <a href="projects.html" class="nav-button">View all projects</a>
-  </div>
-</section>
-
-</main>
-
-<footer id="contact" class="site-footer">
-  <h2>Contact</h2>
-  <a href="mailto:pritbhatt2010@gmail.com">pritbhatt2010@gmail.com</a>
-  <p>© 2025 Prit Kalpesh Kumar Bhatt</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init({ once:true, duration:500 });</script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 600, easing: 'ease-out' });
+  </script>
 
 </body>
 </html>

@@ -1,73 +1,149 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" id="top" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <title>Projects | Prit Bhatt</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Projects by Prit Bhatt — Applied AI, Computer Vision & Full-Stack Systems" />
+  <meta name="author" content="Prit Kalpesh Kumar Bhatt" />
+
+  <title>Projects | Prit Bhatt</title>
+
+  <!-- Google Fonts - Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS (optional - matches index.html) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Tailwind + daisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Your custom styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="bg-[#0b0c10] text-[#d7d9db] font-['Outfit'] min-h-screen">
 
-<header class="sticky-header">
-  <div class="profile-card">
-    <div class="intro">
-      <h1>Prit Bhatt</h1>
-      <p class="tagline">Applied AI • Computer Vision • Full-Stack Systems</p>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header sticky top-3 z-50 mx-4 md:mx-6 lg:mx-8" data-aos="fade-down">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="index.html" class="brand-name">Prit Bhatt</a>
+        <span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span>
+      </div>
+
+      <div class="navbar-end lg:hidden">
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow-lg bg-base-100 rounded-box w-52 mt-3">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="https://github.com/KozmikLojik" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="main-nav hidden lg:flex">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+
+        <span class="nav-divider"></span>
+
+        <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <nav class="site-nav">
-    <a href="index.html" class="nav-button">Home</a>
-    <a href="projects.html" class="nav-button">Projects</a>
-    <a href="achievements.html" class="nav-button">Achievements</a>
-    <a href="https://github.com/KozmikLojik" target="_blank" class="nav-button">GitHub</a>
-    <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" class="nav-button">LinkedIn</a>
-  </nav>
-</header>
+  <!-- ================= MAIN ================= -->
+  <main class="pt-24 pb-16 px-6 md:px-12 lg:px-20">
 
-<main class="projects">
-  <h2>All Projects</h2>
-
-  <div class="projects-grid">
-
-    <article class="project-card">
-      <h3>Mediscan AI</h3>
-      <p>
-        Medical image analysis system for anomaly detection and segmentation
-        using deep learning pipelines.
+    <section class="text-center mb-16" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        All <span class="text-[#66fcf1]">Projects</span>
+      </h1>
+      <p class="text-xl opacity-80 max-w-3xl mx-auto">
+        A collection of applied AI, computer vision, and full-stack systems I've built.
       </p>
-      <p class="tech"><strong>Tech:</strong> Python, PyTorch, TensorFlow, OpenCV</p>
-      <a href="https://github.com/KozmikLojik/mediscan-ai" target="_blank">GitHub</a>
-    </article>
+    </section>
 
-    <article class="project-card">
-      <h3>Aqua Vision AI</h3>
-      <p>
-        Computer vision system for detecting water bodies and pollution
-        patterns in satellite imagery.
+    <div class="projects-grid max-w-7xl mx-auto">
+      <!-- Project 1 -->
+      <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Mediscan AI</h3>
+        <p>
+          Medical image analysis system for anomaly detection and segmentation using deep learning pipelines.
+        </p>
+        <div class="tech">
+          <span>Python</span>
+          <span>PyTorch</span>
+          <span>TensorFlow</span>
+          <span>OpenCV</span>
+        </div>
+        <a href="https://github.com/KozmikLojik/mediscan-ai" target="_blank" class="project-link">
+          View on GitHub →
+        </a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Aqua Vision AI</h3>
+        <p>
+          Computer vision system for detecting water bodies and pollution patterns in satellite imagery.
+        </p>
+        <div class="tech">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>Geospatial Data</span>
+        </div>
+        <a href="https://github.com/KozmikLojik/aqua-vision-ai" target="_blank" class="project-link">
+          View on GitHub →
+        </a>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>AI Resume Screener</h3>
+        <p>
+          NLP-based system to extract skills and rank resumes using machine learning pipelines.
+        </p>
+        <div class="tech">
+          <span>Python</span>
+          <span>spaCy</span>
+          <span>scikit-learn</span>
+        </div>
+        <a href="https://github.com/KozmikLojik/ai-resume-screener" target="_blank" class="project-link">
+          View on GitHub →
+        </a>
+      </article>
+
+      <!-- Add more projects here in the same format -->
+    </div>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer mt-24">
+    <div class="text-center py-12">
+      <p class="text-lg opacity-70">
+        © 2025 Prit Kalpesh Kumar Bhatt — All Rights Reserved
       </p>
-      <p class="tech"><strong>Tech:</strong> Python, OpenCV, Geospatial Data</p>
-      <a href="https://github.com/KozmikLojik/aqua-vision-ai" target="_blank">GitHub</a>
-    </article>
+    </div>
+  </footer>
 
-    <article class="project-card">
-      <h3>AI Resume Screener</h3>
-      <p>
-        NLP-based system to extract skills and rank resumes using ML pipelines.
-      </p>
-      <p class="tech"><strong>Tech:</strong> Python, spaCy, scikit-learn</p>
-      <a href="https://github.com/KozmikLojik/ai-resume-screener" target="_blank">GitHub</a>
-    </article>
-
-  </div>
-</main>
-
-<footer class="site-footer">
-  <p>© 2025 Prit Bhatt</p>
-</footer>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 600, easing: 'ease-out' });
+  </script>
 
 </body>
 </html>

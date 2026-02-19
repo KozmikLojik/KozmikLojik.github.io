@@ -1,72 +1,197 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" id="top" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <title>Achievements | Prit Bhatt</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="achievements.css">
+  <meta name="description" content="Achievements & Certifications | Prit Bhatt — Applied AI, Computer Vision & Full-Stack" />
+  <meta name="author" content="Prit Kalpesh Kumar Bhatt" />
+
+  <title>Achievements | Prit Bhatt</title>
+
+  <!-- Google Fonts - Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Tailwind + daisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="bg-[#0b0c10] text-[#d7d9db] font-['Outfit'] min-h-screen">
 
-<header class="sticky-header">
-  <div class="profile-card">
-    <div class="intro">
-      <h1>Prit Bhatt</h1>
-      <p class="tagline">Applied AI • Computer Vision • Full-Stack Systems</p>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header sticky top-3 z-50 mx-4 md:mx-6 lg:mx-8" data-aos="fade-down">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="index.html" class="brand-name">Prit Bhatt</a>
+        <span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span>
+      </div>
+
+      <div class="navbar-end lg:hidden">
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow-lg bg-base-100 rounded-box w-52 mt-3">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="https://github.com/KozmikLojik" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="main-nav hidden lg:flex">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+
+        <span class="nav-divider"></span>
+
+        <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <nav class="site-nav">
-    <a href="index.html" class="nav-button">Home</a>
-    <a href="projects.html" class="nav-button">Projects</a>
-    <a href="achievements.html" class="nav-button">Achievements</a>
-    <a href="https://github.com/KozmikLojik" target="_blank" class="nav-button">GitHub</a>
-    <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" class="nav-button">LinkedIn</a>
-  </nav>
-</header>
+  <!-- ================= MAIN ================= -->
+  <main class="pt-24 pb-16 px-6 md:px-12 lg:px-20">
 
-<div class="timeline">
-
-  <div class="timeline-item left">
-    <div class="content">
-      <h3>Flutter & Android (Shorebird Workshop)</h3>
-      <time>August 2025</time>
-      <p>
-        Participated in a Google Developer Group workshop focused on
-        cross-platform Flutter development and production-grade mobile workflows.
+    <section class="text-center mb-16" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Achievements & <span class="text-[#66fcf1]">Certifications</span>
+      </h1>
+      <p class="text-xl opacity-80 max-w-3xl mx-auto">
+        Milestones, events, workshops, and recognitions in AI, computer vision, and software development.
       </p>
-      <span class="tag">Event</span>
-    </div>
-  </div>
+    </section>
 
-  <div class="timeline-item right">
-    <div class="content">
-      <h3>Microsoft AI & App Development Summit</h3>
-      <time>August 2025</time>
-      <p>
-        Completed structured AI and app development tracks and earned
-        <strong>8 verified Microsoft skill badges</strong>.
+    <!-- Timeline -->
+    <ul class="timeline timeline-snap-icon timeline-vertical max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- New Certificate - Feb 2026 -->
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-[#66fcf1]">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 001.06 0L10 12.44l2.19-3.19a.75.75 0 111.06 1.06l-2.72 3.97a.75.75 0 01-1.06 0L6.75 10.31a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="timeline-start md:text-end mb-10">
+          <time class="font-mono italic text-[#66fcf1]">Feb 6 – 15, 2026</time>
+          <h3 class="text-xl font-bold mt-2">Launch and Fund Your Own Startup – Edition 1</h3>
+          <p class="mt-3">
+            Completed the intensive program focused on launching and funding AI/ML startups.
+            Built and submitted a solution using AI/ML APIs, OpenGPTs, Assistants API, OpenAI, and Cohere.
+          </p>
+          <p class="mt-4 text-sm opacity-80 italic">
+            "Thank you for participating in the Launch and Fund Your Own Startup-Edition 1! 
+            You can find the certificate on your lablab.ai profile page."
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <span class="badge badge-primary">Certificate</span>
+            <span class="badge badge-success">Completed</span>
+          </div>
+          <a href="C:\Users\pritb\Downloads\certificet hackathon.jpeg" target="_blank" class="mt-4 inline-block btn btn-sm btn-outline btn-primary">
+            View Certificate →
+          </a>
+        </div>
+        <hr />
+      </li>
+
+      <!-- Flutter & Android Workshop -->
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-[#66fcf1]">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 001.06 0L10 12.44l2.19-3.19a.75.75 0 111.06 1.06l-2.72 3.97a.75.75 0 01-1.06 0L6.75 10.31a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="timeline-end mb-10">
+          <time class="font-mono italic">August 2025</time>
+          <h3 class="text-xl font-bold mt-2">Flutter & Android (Shorebird Workshop)</h3>
+          <p class="mt-3">
+            Participated in a Google Developer Group workshop focused on cross-platform Flutter development 
+            and production-grade mobile workflows with Shorebird.
+          </p>
+          <div class="mt-4">
+            <span class="badge badge-primary">Event</span>
+          </div>
+        </div>
+        <hr />
+      </li>
+
+      <!-- Microsoft AI & App Development Summit -->
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-[#66fcf1]">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 001.06 0L10 12.44l2.19-3.19a.75.75 0 111.06 1.06l-2.72 3.97a.75.75 0 01-1.06 0L6.75 10.31a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="timeline-start md:text-end mb-10">
+          <time class="font-mono italic">August 2025</time>
+          <h3 class="text-xl font-bold mt-2">Microsoft AI & App Development Summit</h3>
+          <p class="mt-3">
+            Completed structured AI and app development tracks and earned 
+            <strong>8 verified Microsoft skill badges</strong>.
+          </p>
+          <div class="mt-4">
+            <span class="badge badge-primary">Certificate</span>
+            <span class="badge badge-success">8 Badges</span>
+          </div>
+        </div>
+        <hr />
+      </li>
+
+      <!-- Data Engineering Summit -->
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-[#66fcf1]">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 001.06 0L10 12.44l2.19-3.19a.75.75 0 111.06 1.06l-2.72 3.97a.75.75 0 01-1.06 0L6.75 10.31a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="timeline-end mb-10">
+          <time class="font-mono italic">2025</time>
+          <h3 class="text-xl font-bold mt-2">Data Engineering Summit (Registered)</h3>
+          <p class="mt-3">
+            Registered for an industry summit focused on scalable data pipelines and AI infrastructure design.
+          </p>
+          <div class="mt-4">
+            <span class="badge badge-primary">Event</span>
+          </div>
+        </div>
+        <hr />
+      </li>
+
+    </ul>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer mt-24">
+    <div class="text-center py-12">
+      <p class="text-lg opacity-70">
+        © 2025 Prit Kalpesh Kumar Bhatt — All Rights Reserved
       </p>
-      <span class="tag">Certificate</span>
     </div>
-  </div>
+  </footer>
 
-  <div class="timeline-item left">
-    <div class="content">
-      <h3>Data Engineering Summit (Registered)</h3>
-      <time>2025</time>
-      <p>
-        Registered for an industry summit focused on scalable data pipelines
-        and AI infrastructure design.
-      </p>
-      <span class="tag">Event</span>
-    </div>
-  </div>
-
-</div>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 600, easing: 'ease-out' });
+  </script>
 
 </body>
 </html>
