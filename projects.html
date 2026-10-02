@@ -3,147 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta name="description" content="Projects by Prit Bhatt — Applied AI, Computer Vision & Full-Stack Systems" />
+  <meta name="description" content="Selected software projects by Prit Bhatt across applied AI, computer vision, automation, and web development." />
   <meta name="author" content="Prit Kalpesh Kumar Bhatt" />
-
+  <meta name="theme-color" content="#080d13" />
   <title>Projects | Prit Bhatt</title>
-
-  <!-- Google Fonts - Outfit -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- AOS (optional - matches index.html) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
-  <!-- Tailwind + daisyUI -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.min.css" rel="stylesheet" type="text/css" />
-
-  <!-- Your custom styles -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body class="bg-[#0b0c10] text-[#d7d9db] font-['Outfit'] min-h-screen">
-
-  <!-- ================= HEADER ================= -->
-  <header class="site-header sticky top-3 z-50 mx-4 md:mx-6 lg:mx-8" data-aos="fade-down">
+  <header class="site-header" data-aos="fade-down">
     <div class="header-inner">
-      <div class="brand">
-        <a href="index.html" class="brand-name">Prit Bhatt</a>
-        <span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span>
-      </div>
-
-      <div class="navbar-end lg:hidden">
-        <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </label>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow-lg bg-base-100 rounded-box w-52 mt-3">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="https://github.com/KozmikLojik" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <nav class="main-nav hidden lg:flex">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="achievements.html">Achievements</a>
-
-        <span class="nav-divider"></span>
-
-        <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
+      <div class="brand"><a href="index.html" class="brand-name">Prit Bhatt</a><span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span></div>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="achievements.html">Achievements</a><span class="nav-divider" aria-hidden="true"></span>
+        <a href="https://github.com/KozmikLojik" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
       </nav>
     </div>
   </header>
-
-  <!-- ================= MAIN ================= -->
-  <main class="pt-24 pb-16 px-6 md:px-12 lg:px-20">
-
-    <section class="text-center mb-16" data-aos="fade-up">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        All <span class="text-[#66fcf1]">Projects</span>
-      </h1>
-      <p class="text-xl opacity-80 max-w-3xl mx-auto">
-        A collection of applied AI, computer vision, and full-stack systems I've built.
-      </p>
+  <main class="pt-16 pb-16 px-6 md:px-12 lg:px-20">
+    <section class="text-center mb-12" data-aos="fade-up">
+      <p class="text-sm uppercase tracking-[.22em] text-[#72e5d1] mb-4">Selected work</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1>
+      <p class="text-lg md:text-xl opacity-80 max-w-3xl mx-auto">A selection of experiments and applications spanning intelligent systems, computer vision, and software engineering.</p>
     </section>
-
-    <div class="projects-grid max-w-7xl mx-auto">
-      <!-- Project 1 -->
-      <article class="project-card" data-aos="fade-up" data-aos-delay="100">
-        <h3>Mediscan AI</h3>
-        <p>
-          Medical image analysis system for anomaly detection and segmentation using deep learning pipelines.
-        </p>
-        <div class="tech">
-          <span>Python</span>
-          <span>PyTorch</span>
-          <span>TensorFlow</span>
-          <span>OpenCV</span>
-        </div>
-        <a href="https://github.com/KozmikLojik/mediscan-ai" target="_blank" class="project-link">
-          View on GitHub →
-        </a>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Aqua Vision AI</h3>
-        <p>
-          Computer vision system for detecting water bodies and pollution patterns in satellite imagery.
-        </p>
-        <div class="tech">
-          <span>Python</span>
-          <span>OpenCV</span>
-          <span>Geospatial Data</span>
-        </div>
-        <a href="https://github.com/KozmikLojik/aqua-vision-ai" target="_blank" class="project-link">
-          View on GitHub →
-        </a>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="project-card" data-aos="fade-up" data-aos-delay="300">
-        <h3>AI Resume Screener</h3>
-        <p>
-          NLP-based system to extract skills and rank resumes using machine learning pipelines.
-        </p>
-        <div class="tech">
-          <span>Python</span>
-          <span>spaCy</span>
-          <span>scikit-learn</span>
-        </div>
-        <a href="https://github.com/KozmikLojik/ai-resume-screener" target="_blank" class="project-link">
-          View on GitHub →
-        </a>
-      </article>
-
-      <!-- Add more projects here in the same format -->
-    </div>
-
+    <section class="projects-grid max-w-7xl mx-auto" aria-label="Project portfolio">
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Applied AI</p><h2 class="text-2xl font-bold mt-2">Mediscan AI</h2><p>Medical imaging project exploring AI-assisted image analysis and anomaly detection.</p><div class="tech"><span>AI</span><span>Medical Imaging</span><span>Python</span></div><a class="project-link" href="https://github.com/KozmikLojik/mediscan-ai" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Computer Vision</p><h2 class="text-2xl font-bold mt-2">Aqua Vision AI</h2><p>A computer vision project focused on water imagery and environmental monitoring.</p><div class="tech"><span>Computer Vision</span><span>AI</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/KozmikLojik/aqua-vision-ai" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Natural Language Processing</p><h2 class="text-2xl font-bold mt-2">AI Resume Screener</h2><p>A resume screening project using machine learning and text processing techniques.</p><div class="tech"><span>Python</span><span>NLP</span><span>Machine Learning</span></div><a class="project-link" href="https://github.com/KozmikLojik/ai-resume-screener" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Computer Vision</p><h2 class="text-2xl font-bold mt-2">Hand Gesture Recognition</h2><p>A real-time gesture recognition project built around webcam input and visual landmarks.</p><div class="tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div><a class="project-link" href="https://github.com/KozmikLojik/hand_gesture_recognition" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Security</p><h2 class="text-2xl font-bold mt-2">Safe Web Guardian</h2><p>A web safety project exploring safer browsing and suspicious-site awareness.</p><div class="tech"><span>Web</span><span>Security</span><span>AI</span></div><a class="project-link" href="https://github.com/KozmikLojik/safe-web-guardian" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Automation</p><h2 class="text-2xl font-bold mt-2">Browser Automation</h2><p>Python tooling for automating repeatable browser workflows.</p><div class="tech"><span>Python</span><span>Automation</span></div><a class="project-link" href="https://github.com/KozmikLojik/browser_automation" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Computer Vision</p><h2 class="text-2xl font-bold mt-2">Face Recognition</h2><p>A face recognition application with a TypeScript-based project structure.</p><div class="tech"><span>TypeScript</span><span>Computer Vision</span></div><a class="project-link" href="https://github.com/KozmikLojik/face-recognition" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Machine Learning</p><h2 class="text-2xl font-bold mt-2">ML Stock Price Prediction</h2><p>A Python project exploring machine learning approaches to historical stock price data.</p><div class="tech"><span>Python</span><span>Machine Learning</span><span>Data</span></div><a class="project-link" href="https://github.com/KozmikLojik/ml-stock-price-prediction" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+      <article class="project-card" data-aos="fade-up"><p class="text-xs uppercase tracking-widest text-[#72e5d1]">Web Development</p><h2 class="text-2xl font-bold mt-2">Discord Clone</h2><p>A full-stack messaging interface inspired by community chat platforms.</p><div class="tech"><span>JavaScript</span><span>Web Development</span></div><a class="project-link" href="https://github.com/KozmikLojik/discord-clone" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a></article>
+    </section>
+    <p class="text-center mt-12 text-sm text-slate-400">More experiments and source code are available on <a href="https://github.com/KozmikLojik?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>.</p>
   </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer mt-24">
-    <div class="text-center py-12">
-      <p class="text-lg opacity-70">
-        © 2025 Prit Kalpesh Kumar Bhatt — All Rights Reserved
-      </p>
-    </div>
-  </footer>
-
-  <!-- AOS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ once: true, duration: 600, easing: 'ease-out' });
-  </script>
-
+  <footer class="site-footer"><div class="text-center py-10"><p class="text-sm opacity-70">© <span data-current-year>2026</span> Prit Kalpesh Kumar Bhatt</p></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script><script>AOS.init({ once: true, duration: 500, easing: 'ease-out' });</script>
+  <script>document.querySelectorAll('[data-current-year]').forEach(node => node.textContent = new Date().getFullYear());</script>
 </body>
 </html>

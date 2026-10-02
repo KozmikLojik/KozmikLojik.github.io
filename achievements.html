@@ -44,8 +44,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="https://github.com/KozmikLojik" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/KozmikLojik" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -57,8 +57,8 @@
 
         <span class="nav-divider"></span>
 
-        <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
+        <a href="https://github.com/KozmikLojik" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </nav>
     </div>
   </header>
@@ -101,9 +101,6 @@
             <span class="badge badge-primary">Certificate</span>
             <span class="badge badge-success">Completed</span>
           </div>
-          <a href="C:\Users\pritb\Downloads\certificet hackathon.jpeg" target="_blank" class="mt-4 inline-block btn btn-sm btn-outline btn-primary">
-            View Certificate →
-          </a>
         </div>
         <hr />
       </li>
@@ -182,7 +179,7 @@
   <footer class="site-footer mt-24">
     <div class="text-center py-12">
       <p class="text-lg opacity-70">
-        © 2025 Prit Kalpesh Kumar Bhatt — All Rights Reserved
+        © <span data-current-year>2026</span> Prit Kalpesh Kumar Bhatt
       </p>
     </div>
   </footer>
@@ -193,5 +190,6 @@
     AOS.init({ once: true, duration: 600, easing: 'ease-out' });
   </script>
 
+  <script>document.querySelectorAll('[data-current-year]').forEach(node => node.textContent = new Date().getFullYear());</script>
 </body>
 </html>

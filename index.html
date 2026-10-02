@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080d13" />
 
   <meta name="description"
         content="Prit Kalpesh Kumar Bhatt — Computer Science student focused on AI, computer vision, and full-stack software development." />
@@ -43,8 +44,8 @@
 
         <span class="nav-divider"></span>
 
-        <a href="https://github.com/KozmikLojik" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank">LinkedIn</a>
+        <a href="https://github.com/KozmikLojik" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </nav>
     </div>
   </header>
@@ -54,12 +55,13 @@
 
     <!-- Intro -->
     <section class="intro text-center px-6 md:px-12 lg:px-20" data-aos="fade-up">
+      <p class="text-sm uppercase tracking-[.22em] text-[#72e5d1] mb-5">Portfolio · Selected work</p>
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
         Computer Science student building<br>
-        <span class="text-[#66fcf1]">AI, computer vision, and production-grade software systems</span>
+        <span class="text-[#66fcf1]">AI, computer vision, and useful software</span>
       </h1>
       <p class="text-xl md:text-2xl opacity-80 max-w-4xl mx-auto">
-        Focused on real-time processing, robust ML integration, and end-to-end systems.
+        I build practical projects across intelligent systems, computer vision, automation, and full-stack development.
       </p>
     </section>
 
@@ -117,7 +119,7 @@
           <span>MediaPipe</span>
           <span>NumPy</span>
         </div>
-        <a href="https://github.com/KozmikLojik/hand_gesture_recognition" target="_blank" class="mt-6 inline-block bg-[#66fcf1]/10 hover:bg-[#66fcf1]/20 text-[#66fcf1] px-6 py-3 rounded-lg font-medium transition-all">
+        <a href="https://github.com/KozmikLojik/hand_gesture_recognition" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-[#66fcf1]/10 hover:bg-[#66fcf1]/20 text-[#66fcf1] px-6 py-3 rounded-lg font-medium transition-all">
           View on GitHub →
         </a>
       </div>
@@ -139,7 +141,7 @@
         pritbhatt2010@gmail.com
       </a>
       <p class="mt-8 text-sm opacity-70">
-        © 2025 Prit Kalpesh Kumar Bhatt — All Rights Reserved
+        © <span data-current-year>2026</span> Prit Kalpesh Kumar Bhatt
       </p>
     </div>
   </footer>
@@ -150,5 +152,6 @@
     AOS.init({ once: true, duration: 600, easing: 'ease-out' });
   </script>
 
+  <script>document.querySelectorAll('[data-current-year]').forEach(node => node.textContent = new Date().getFullYear());</script>
 </body>
 </html>
