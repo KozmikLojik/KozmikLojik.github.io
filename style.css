@@ -43,7 +43,7 @@ img, svg { max-width: 100%; }
 .brand-subtitle { color: var(--muted); font-size: .78rem; }
 .main-nav { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: .25rem; }
 .main-nav a { padding: .5rem .7rem; border-radius: 9px; color: var(--muted); font-size: .9rem; text-decoration: none; transition: color var(--ease), background var(--ease); }
-.main-nav a:hover, .main-nav a:focus-visible { color: var(--text); background: rgba(114, 229, 209, .1); }
+.main-nav a:hover, .main-nav a:focus-visible, .main-nav a[aria-current="page"] { color: var(--text); background: rgba(114, 229, 209, .1); }
 .nav-divider { width: 1px; height: 1.35rem; margin: 0 .35rem; background: var(--line); }
 
 main { width: min(100%, 1440px); margin-inline: auto; }
@@ -87,4 +87,9 @@ section { scroll-margin-top: 6rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+/* Ensure the desktop navigation obeys its responsive utility classes. */
+.main-nav.hidden { display: none; }
+@media (min-width: 1024px) {
+  .main-nav.hidden { display: flex; }
 }

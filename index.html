@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="top" data-theme="dark">
+<html lang="en" id="top" data-theme="dark" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,7 @@
   <header class="site-header sticky top-3 z-50 mx-4 md:mx-6 lg:mx-8" data-aos="fade-down">
     <div class="header-inner">
       <div class="brand">
-        <a href="#" class="brand-name">Prit Bhatt</a>
+        <a href="index.html" class="brand-name" aria-current="page">Prit Bhatt</a>
         <span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span>
       </div>
 
@@ -148,10 +148,6 @@
 
   <!-- AOS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ once: true, duration: 600, easing: 'ease-out' });
-  </script>
-
-  <script>document.querySelectorAll('[data-current-year]').forEach(node => node.textContent = new Date().getFullYear());</script>
+  <script src="script.js" defer></script>
 </body>
 </html>
