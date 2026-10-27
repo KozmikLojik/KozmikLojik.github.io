@@ -3,150 +3,342 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#080d13" />
-
-  <meta name="description"
-        content="Prit Kalpesh Kumar Bhatt — Computer Science student focused on AI, computer vision, and full-stack software development." />
+  <meta name="theme-color" content="#070b10" />
+  <meta name="description" content="Prit Kalpesh Kumar Bhatt — Computer Science student focused on AI, computer vision, and full-stack software development." />
   <meta name="author" content="Prit Kalpesh Kumar Bhatt" />
-
-  <title>Prit Bhatt | Portfolio</title>
-
-  <!-- Google Fonts - Outfit -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation -->
+  <title>Prit Bhatt | Applied AI, Computer Vision &amp; Full-Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
-  <!-- Tailwind + daisyUI -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.min.css" rel="stylesheet" type="text/css" />
-
-  <!-- Your custom styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+  <div class="page-bg" aria-hidden="true"></div>
 
-<body class="bg-[#0b0c10] text-[#d7d9db] font-['Outfit'] min-h-screen">
-
-  <!-- ================= HEADER ================= -->
-  <header class="site-header sticky top-3 z-50 mx-4 md:mx-6 lg:mx-8" data-aos="fade-down">
+  <header class="site-header" data-header>
     <div class="header-inner">
       <div class="brand">
-        <a href="index.html" class="brand-name" aria-current="page">Prit Bhatt</a>
+        <a href="#home" class="brand-name" aria-current="page">Prit Bhatt</a>
         <span class="brand-subtitle">Applied AI · Computer Vision · Full-Stack</span>
       </div>
 
-      <nav class="main-nav" aria-label="Primary Navigation">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="primary-nav" data-nav aria-label="Primary navigation">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="achievements.html">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-
-        <span class="nav-divider"></span>
-
+        <span class="nav-divider" aria-hidden="true"></span>
         <a href="https://github.com/KozmikLojik" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </nav>
     </div>
   </header>
 
-  <!-- ================= MAIN ================= -->
-  <main class="pt-24 pb-16">
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy" data-aos="fade-up">
+        <p class="eyebrow">Portfolio · Selected work</p>
+        <h1>
+          Building intelligent systems that hold up in the real world.
+        </h1>
+        <p class="hero-lead">
+          Computer Science student focused on applied AI, computer vision, and full-stack software —
+          from live webcam pipelines to practical end-to-end products.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="hero-meta">
+          <li>Open to internships</li>
+          <li>Research-minded builder</li>
+          <li>India · Remote-friendly</li>
+        </ul>
+      </div>
 
-    <!-- Intro -->
-    <section class="intro text-center px-6 md:px-12 lg:px-20" data-aos="fade-up">
-      <p class="text-sm uppercase tracking-[.22em] text-[#72e5d1] mb-5">Portfolio · Selected work</p>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-        Computer Science student building<br>
-        <span class="text-[#66fcf1]">AI, computer vision, and useful software</span>
-      </h1>
-      <p class="text-xl md:text-2xl opacity-80 max-w-4xl mx-auto">
-        I build practical projects across intelligent systems, computer vision, automation, and full-stack development.
-      </p>
+      <aside class="hero-panel" data-aos="fade-left" data-aos-delay="120" aria-label="Focus areas">
+        <p class="panel-kicker">Currently focused on</p>
+        <h2>Real-time vision &amp; useful software</h2>
+        <ul class="focus-list">
+          <li>
+            <strong>Computer vision</strong>
+            <span>Landmark detection, classification, and low-latency inference.</span>
+          </li>
+          <li>
+            <strong>Applied AI</strong>
+            <span>Models integrated into tools people can actually run.</span>
+          </li>
+          <li>
+            <strong>Full-stack systems</strong>
+            <span>APIs, automation, and interfaces with clean architecture.</span>
+          </li>
+        </ul>
+      </aside>
     </section>
 
-    <!-- About -->
-    <section id="about" class="about-section mt-20 px-6 md:px-12 lg:px-20" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#66fcf1] mb-8 text-center">About Me</h2>
-      <div class="max-w-5xl mx-auto text-lg leading-relaxed space-y-6">
-        <p>
-          I focus on applied artificial intelligence and computer vision, with an emphasis on real-time processing and integrating ML models into practical, end-to-end systems.
-        </p>
-        <p>
-          My work spans backend systems, automation, and full-stack development, prioritizing robustness and real-world applicability over toy demos.
-        </p>
+    <section class="stats" aria-label="Highlights">
+      <article>
+        <p class="stat-value">9+</p>
+        <p class="stat-label">Shipped projects</p>
+      </article>
+      <article>
+        <p class="stat-value">3</p>
+        <p class="stat-label">Core domains</p>
+      </article>
+      <article>
+        <p class="stat-value">8</p>
+        <p class="stat-label">Microsoft skill badges</p>
+      </article>
+      <article>
+        <p class="stat-value">2026</p>
+        <p class="stat-label">Actively building</p>
+      </article>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">About</p>
+        <h2>Practical intelligence, not toy demos.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy" data-aos="fade-up">
+          <p>
+            I focus on applied artificial intelligence and computer vision, with an emphasis on
+            real-time processing and integrating ML models into practical, end-to-end systems.
+          </p>
+          <p>
+            My work spans backend systems, automation, and full-stack development. I care about
+            robustness, readable architecture, and software that still works when the webcam,
+            the dataset, or the deadline is not ideal.
+          </p>
+          <p>
+            When I am not shipping a pipeline, I am usually tightening a UI, documenting a repo,
+            or turning a workshop idea into something I can run locally.
+          </p>
+        </div>
+        <div class="about-card" data-aos="fade-up" data-aos-delay="80">
+          <h3>At a glance</h3>
+          <dl>
+            <div>
+              <dt>Role</dt>
+              <dd>CS student · builder</dd>
+            </div>
+            <div>
+              <dt>Strengths</dt>
+              <dd>Vision systems, APIs, product thinking</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>Python, TypeScript, Node.js, OpenCV</dd>
+            </div>
+            <div>
+              <dt>Looking for</dt>
+              <dd>Internships, research, and ambitious teams</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="skills-section mt-20 px-6 md:px-12 lg:px-20" data-aos="fade-up" data-aos-delay="100">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#66fcf1] mb-10 text-center">Technical Skills</h2>
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 text-lg">
-        <div>
-          <h3 class="text-xl font-semibold mb-4 text-[#66fcf1]">Languages</h3>
+    <section class="section" id="skills">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Skills</p>
+        <h2>A toolkit shaped around shipping.</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card" data-aos="fade-up">
+          <h3>Languages</h3>
           <p>Python, JavaScript, TypeScript, Java</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-4 text-[#66fcf1]">Frameworks & Libraries</h3>
+        </article>
+        <article class="skill-card" data-aos="fade-up" data-aos-delay="60">
+          <h3>Frameworks &amp; libraries</h3>
           <p>OpenCV, MediaPipe, Node.js, Express</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-4 text-[#66fcf1]">Tools</h3>
+        </article>
+        <article class="skill-card" data-aos="fade-up" data-aos-delay="120">
+          <h3>Tools</h3>
           <p>Git, GitHub, MongoDB, REST APIs</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-4 text-[#66fcf1]">Domains</h3>
-          <p>Computer Vision, Automation, ML Foundations</p>
-        </div>
+        </article>
+        <article class="skill-card" data-aos="fade-up" data-aos-delay="180">
+          <h3>Domains</h3>
+          <p>Computer vision, automation, ML foundations</p>
+        </article>
       </div>
     </section>
 
-    <!-- Flagship Project -->
-    <section class="projects-section mt-20 px-6 md:px-12 lg:px-20" data-aos="fade-up" data-aos-delay="200">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#66fcf1] mb-10 text-center">Flagship Project</h2>
-      
-      <div class="project-card max-w-4xl mx-auto">
-        <h3 class="text-2xl font-bold text-[#66fcf1] mb-4">Real-Time Hand Gesture Recognition System</h3>
-        <p class="mb-4">
-          Designed and implemented a real-time computer vision pipeline that detects and classifies human hand gestures from live webcam input.
-        </p>
-        <p class="mb-6">
-          Built the full pipeline including preprocessing, landmark detection, classification logic, and low-latency inference.
-        </p>
-        <div class="tech">
-          <span>Python</span>
-          <span>OpenCV</span>
-          <span>MediaPipe</span>
-          <span>NumPy</span>
-        </div>
-        <a href="https://github.com/KozmikLojik/hand_gesture_recognition" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-[#66fcf1]/10 hover:bg-[#66fcf1]/20 text-[#66fcf1] px-6 py-3 rounded-lg font-medium transition-all">
-          View on GitHub →
-        </a>
+    <section class="section" id="projects">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work worth a closer look.</h2>
       </div>
 
-      <div class="text-center mt-12">
-        <a href="projects.html" class="inline-block bg-[#45a29e]/80 hover:bg-[#45a29e] text-white px-8 py-4 rounded-lg font-medium transition-all shadow-lg">
-          View all projects
-        </a>
+      <article class="featured-project" data-aos="fade-up">
+        <div class="featured-media" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none">
+            <rect x="8" y="14" width="48" height="36" rx="8" stroke="currentColor" stroke-width="2"/>
+            <circle cx="24" cy="32" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M36 28h14M36 36h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="featured-body">
+          <p class="card-kicker">Flagship · Computer Vision</p>
+          <h3>Real-Time Hand Gesture Recognition</h3>
+          <p>
+            A live computer vision pipeline that detects and classifies hand gestures from webcam
+            input — covering preprocessing, landmark detection, classification logic, and
+            low-latency inference.
+          </p>
+          <div class="tech">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>MediaPipe</span>
+            <span>NumPy</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="https://github.com/KozmikLojik/hand_gesture_recognition" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a class="btn btn-ghost" href="projects.html">All projects</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="projects-grid">
+        <article class="project-card" data-aos="fade-up">
+          <p class="card-kicker">Applied AI</p>
+          <h3>Mediscan AI</h3>
+          <p>Medical imaging work exploring AI-assisted analysis and anomaly detection.</p>
+          <div class="tech"><span>Python</span><span>AI</span><span>Imaging</span></div>
+          <a class="project-link" href="https://github.com/KozmikLojik/mediscan-ai" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card" data-aos="fade-up" data-aos-delay="60">
+          <p class="card-kicker">Computer Vision</p>
+          <h3>Aqua Vision AI</h3>
+          <p>Vision-focused work on water imagery and environmental monitoring.</p>
+          <div class="tech"><span>JavaScript</span><span>CV</span><span>AI</span></div>
+          <a class="project-link" href="https://github.com/KozmikLojik/aqua-vision-ai" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card" data-aos="fade-up" data-aos-delay="120">
+          <p class="card-kicker">NLP</p>
+          <h3>AI Resume Screener</h3>
+          <p>Resume screening with machine learning and text-processing techniques.</p>
+          <div class="tech"><span>Python</span><span>NLP</span><span>ML</span></div>
+          <a class="project-link" href="https://github.com/KozmikLojik/ai-resume-screener" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card" data-aos="fade-up">
+          <p class="card-kicker">Security</p>
+          <h3>Safe Web Guardian</h3>
+          <p>Safer browsing experiments around suspicious-site awareness.</p>
+          <div class="tech"><span>Web</span><span>Security</span><span>AI</span></div>
+          <a class="project-link" href="https://github.com/KozmikLojik/safe-web-guardian" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card" data-aos="fade-up" data-aos-delay="60">
+          <p class="card-kicker">Web</p>
+          <h3>Discord Clone</h3>
+          <p>A full-stack messaging interface inspired by community chat platforms.</p>
+          <div class="tech"><span>JavaScript</span><span>Full-stack</span></div>
+          <a class="project-link" href="https://github.com/KozmikLojik/discord-clone" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card" data-aos="fade-up" data-aos-delay="120">
+          <p class="card-kicker">Machine Learning</p>
+          <h3>ML Stock Price Prediction</h3>
+          <p>Exploring machine learning approaches on historical market data.</p>
+          <div class="tech"><span>Python</span><span>ML</span><span>Data</span></div>
+          <a class="project-link" href="https://github.com/KozmikLojik/ml-stock-price-prediction" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+
+      <div class="section-cta">
+        <a class="btn btn-primary" href="projects.html">Browse the full archive</a>
       </div>
     </section>
 
+    <section class="section" id="experience">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Experience</p>
+        <h2>Learning in public, shipping on purpose.</h2>
+      </div>
+      <ol class="experience-list">
+        <li class="experience-item" data-aos="fade-up">
+          <time datetime="2026-02">Feb 2026</time>
+          <div>
+            <h3>Launch and Fund Your Own Startup — Edition 1</h3>
+            <p>Built and submitted an AI/ML solution using modern assistant APIs during an intensive startup program.</p>
+          </div>
+        </li>
+        <li class="experience-item" data-aos="fade-up">
+          <time datetime="2025-08">Aug 2025</time>
+          <div>
+            <h3>Microsoft AI &amp; App Development Summit</h3>
+            <p>Completed structured AI and app development tracks and earned 8 verified Microsoft skill badges.</p>
+          </div>
+        </li>
+        <li class="experience-item" data-aos="fade-up">
+          <time datetime="2025-08">Aug 2025</time>
+          <div>
+            <h3>Flutter &amp; Android — Shorebird Workshop</h3>
+            <p>Google Developer Group session on cross-platform Flutter development and production-grade mobile workflows.</p>
+          </div>
+        </li>
+        <li class="experience-item" data-aos="fade-up">
+          <time datetime="2025">2025 — Present</time>
+          <div>
+            <h3>Independent builder</h3>
+            <p>Designing computer vision, automation, and full-stack projects with an emphasis on real-world applicability.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="section-cta">
+        <a class="btn btn-ghost" href="achievements.html">View achievements</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something useful.</h2>
+        <p>Open to internships, collaborations, and conversations about applied AI.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" data-contact-form data-aos="fade-up" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+        <aside class="contact-aside" data-aos="fade-up" data-aos-delay="80">
+          <a href="mailto:pritbhatt2010@gmail.com">pritbhatt2010@gmail.com</a>
+          <a href="https://github.com/KozmikLojik" target="_blank" rel="noopener noreferrer">github.com/KozmikLojik</a>
+          <a href="https://www.linkedin.com/in/prit-bhatt-25a892348" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+        </aside>
+      </div>
+    </section>
   </main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer id="contact" class="site-footer mt-24">
-    <div class="text-center py-12">
-      <h2 class="text-2xl font-bold text-[#66fcf1] mb-4">Get in Touch</h2>
-      <a href="mailto:pritbhatt2010@gmail.com" class="text-xl hover:text-[#66fcf1] transition-colors">
-        pritbhatt2010@gmail.com
-      </a>
-      <p class="mt-8 text-sm opacity-70">
-        © <span data-current-year>2026</span> Prit Kalpesh Kumar Bhatt
-      </p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span data-current-year>2026</span> Prit Kalpesh Kumar Bhatt</p>
+      <a href="#top">Back to top</a>
     </div>
   </footer>
 
-  <!-- AOS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js" defer></script>
 </body>
